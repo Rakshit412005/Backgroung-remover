@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="bglogo.png">
+    <title>Background Remover | Free & Fast Online Background Removal Tool</title>
+    <meta name="keywords" content="background remover, online background remover, free background removal, image editing, remove background, background removal tool, photo editor" />
+    <meta name="author" content="Harshil Malhotra " />
+
+</head>
+
+<body>
+    <navbar>
+        <img src="logo.png" alt="logo" height="30">
+        <a href="https://github.com/Harshilmalhotra/background-remover" target="_blank"> <img src="github_logo.png" alt="logo"
+                height="30"></a>
+
+    </navbar>
+    <section class="main">
+        <div class="intro">
+            <div class="remove">
+                Remove Image <br>Background
+            </div>
+            <div class="automatically">
+                100% Automatically and Free
+            </div>
+        </div>
+
+        <div class="upload">
+            <img src="edited-image.png" alt="upload" id="upload-img" height="80" class="upload-components">
+            <img src="animation.gif" alt="upload" id="upload-ani" height="100" class="upload-components"
+                style="display: none;">
+            <div class="upload-components">
+                <input type="file" id="file" accept="image/*" style="display: none" ; onchange="handleUpload()" ; />
+                <label for="file" class="upload-btn">Choose a file</label>
+            </div>
+            <div class="upload-components">
+                or drag and drop image here.
+            </div>
+        </div>
+
+    </section>
+
+    <section class="output main" id="output">
+        <div class="output-image" id="output-image" style="align-items: center; justify-items: center;">
+            <canvas id="canvas" width=full height=full ></canvas>
+        </div>
+        <div class="output-controls">
+            
+            <label>Brush Width </label>
+            <input type="range" id="brushWidth" min="3" max="20">
+            
+            
+            <button class="output-btn download" onclick="downloadFile()">Magic Brush</button>
+            <button class="output-btn download" onclick="downloadFile()">Erase</button>
+            <button class="output-btn download" onclick="downloadFile()">Download</button>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        Made by Rakshit Kumar
+    </footer>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
